@@ -1,0 +1,8 @@
+{
+  "name": "webdev2",
+  "version": "1.0.0",
+  "dependencies": {
+    "bootstrap": "^5.2.1",
+    "jquery": "^3.6.1"
+  }
+}
