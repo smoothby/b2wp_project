@@ -1,3 +1,6 @@
+/* ===============================================
+   The Tao that can be told is not the eternal Tao
+   =============================================== */
 :root {
   --font-sans: "Inter", Helvetica, sans-serif;
   --font-serif: Iowan Old Style, Apple Garamond, Baskerville, Times New Roman,
@@ -18,41 +21,48 @@ body {
   font-size: var(--font-size);
   line-height: 1.5;
 }
+
 p {
   color: #000;
   font-weight: 400;
 }
+
 em {
   color: #828282;
   font-weight: 500;
 }
+
 a {
   text-decoration: none;
   transition: var(--transition-time);
 }
+
 a:hover {
   color: var(--color-green);
 }
-h1,
-h2,
-h3 {
+
+h1, h2, h3 {
   font-weight: 800;
 }
+
 h1 {
   color: var(--color-light);
   font-size: 3.5rem;
 }
+
 h2 {
   color: var(--color-dark);
   font-size: 2.8rem;
   margin-bottom: 1rem;
   transition: var(--transition-time);
 }
+
 h3 {
   color: var(--color-dark);
   font-size: 2rem;
   margin-bottom: 0.9rem;
 }
+
 h4 {
   font-size: 1.2rem;
   font-weight: 700;
@@ -81,16 +91,18 @@ cite span {
   margin: 75px 0;
 }
 
-/* Buttons */
+/* ===============================================
+   BUTTONS
+   =============================================== */
 
 .btn {
   padding: 20px 30px;
   display: inline-block;
   border: none;
   transition: var(--transition-time);
-  margin-bottom: 20px;
   font-weight: bold;
 }
+
 .btn:hover {
   box-shadow: 5px 5px 20px rgba(0, 0, 0, 0.5);
   -webkit-box-shadow: 5px 5px 20px rgba(0, 0, 0, 0.5);
@@ -110,7 +122,7 @@ cite span {
 
 .btn.btn-invert {
   color: #fff;
-  padding: 12px;
+  padding: 12px 0px;
   background-color: rgba(255, 255, 255, 0.2);
 }
 
@@ -120,7 +132,9 @@ cite span {
   -moz-box-shadow: 5px 5px 20px rgba(255, 255, 255, 0.2);
 }
 
-/* Forms */
+/* ===============================================
+   FORMS
+   =============================================== */
 
 input[type="text"] {
   font-size: 1rem;
@@ -128,16 +142,20 @@ input[type="text"] {
   border-radius: 5px;
 }
 
-/* Top Nav */
+/* ===============================================
+   MAIN NAVIGATION
+   =============================================== */
 
 #top-navigation {
   position: absolute;
   width: 100%;
 }
+
 .main-menu .navigation {
   position: static;
   margin: 0;
 }
+
 .main-menu .navigation > li {
   position: relative;
   float: left;
@@ -392,8 +410,7 @@ input[type="text"] {
   display: none;
 }
 
-.main-menu
-> ul
+.main-menu > ul
 li.menu-item-has-children
 .dropdown-btn
 i.flaticon-arrow-down-sign-to-navigate::before {
@@ -401,7 +418,6 @@ i.flaticon-arrow-down-sign-to-navigate::before {
 }
 
 .navbar-open {
-  position: relative;
   display: none;
   background-color: unset;
   padding: 0;
@@ -419,6 +435,10 @@ i.flaticon-arrow-down-sign-to-navigate::before {
   cursor: pointer;
   padding: 18px 0px;
 }
+
+/* ===============================================
+   MOBILE MENU SPECIFIC
+   =============================================== */
 
 .mobile-menu {
   position: fixed;
@@ -611,6 +631,7 @@ i.flaticon-arrow-down-sign-to-navigate::before {
     display: none !important;
     visibility: hidden;
   }
+
   .navbar-open {
     opacity: 1;
     visibility: visible;
@@ -618,7 +639,9 @@ i.flaticon-arrow-down-sign-to-navigate::before {
   }
 }
 
-/* Title Banner */
+/* ===============================================
+   TITLE BANNER
+   =============================================== */
 
 .title-banner {
   padding: 120px 0;
@@ -629,7 +652,9 @@ i.flaticon-arrow-down-sign-to-navigate::before {
   color: var(--color-yellow);
 }
 
-/* Subscribe */
+/* ===============================================
+   SUBSCRIBE BAR
+   =============================================== */
 
 .subscribe-bar {
   background-color: #111;
@@ -647,25 +672,23 @@ i.flaticon-arrow-down-sign-to-navigate::before {
   }
 }
 
-.subscribe-bar input,
-.subscribe-bar .btn {
+.subscribe-bar input, .subscribe-bar .btn {
   width: 100%;
   overflow: hidden;
   display: inline-block;
 }
 
-.flex-vertical-center {
-  display: flex;
-  align-items: center;
-}
-
-/* Content */
+/* ===============================================
+   CONTENT SPECIFIC
+   =============================================== */
 
 .content-area {
   padding: 100px 0;
 }
 
-/* Posts */
+/* ===============================================
+   SINGLE POSTS
+   =============================================== */
 
 article.post {
   margin: 50px 0;
@@ -709,30 +732,32 @@ article.post {
   padding-left: 5px;
 }
 
-/* Footer */
+/* ===============================================
+   FOOTER
+   =============================================== */
 
-.footer-calltoaction {
+.footer-cta {
   padding: 100px 0;
   background: linear-gradient(101deg, var(--color-pink) 0%, #bb6bd9 100%);
 }
 
-.footer-calltoaction .sub-title {
+.footer-cta .sub-title {
   color: var(--color-yellow);
 }
 
-.footer-calltoaction h2 {
+.footer-cta h2 {
   color: #fff;
   margin-bottom: 1rem;
 }
 
-.footer-calltoaction p {
+.footer-cta p {
   color: rgba(255, 255, 255, 0.7);
   font-size: 1.2rem;
   font-weight: 500;
   line-height: 1.5;
 }
 
-.footer-calltoaction .btn {
+.footer-cta .btn {
   margin-top: 2rem;
 }
 
@@ -746,7 +771,9 @@ article.post {
   font-weight: 500;
 }
 
-/* Projects Cards - for use in Elementor */
+/* ===============================================
+   WIDGET CARDS
+   =============================================== */
 
 .title-wrapper .sub-title {
   font-size: 1.2rem;
@@ -768,8 +795,7 @@ article.post {
   box-shadow: 0px 10px 15px -3px rgba(0, 0, 0, 0.15);
 }
 
-.text-card h4,
-.text-card p {
+.text-card h4, .text-card p {
   color: #fff;
 }
 
@@ -820,7 +846,7 @@ article.post {
   transform: rotate(-18deg);
 }
 
-.section-call-to-action {
+.section-cta {
   position: relative;
   text-align: center;
   border-radius: 4px;
@@ -828,7 +854,7 @@ article.post {
   margin: 20px 0;
 }
 
-.section-call-to-action .underlay-bg {
+.section-cta .underlay-bg {
   position: absolute;
   top: 0;
   left: 0;
@@ -839,7 +865,7 @@ article.post {
   background-color: #f2f2f2;
 }
 
-.section-call-to-action .overlay {
+.section-cta .overlay {
   position: absolute;
   top: 0;
   left: 0;
@@ -852,13 +878,13 @@ article.post {
   transform: rotate(358deg);
 }
 
-.section-call-to-action .overlay-image img {
+.section-cta .overlay-image img {
   width: 100%;
   height: auto;
   opacity: 0.5;
 }
 
-.section-call-to-action .overlay-image {
+.section-cta .overlay-image {
   position: absolute;
   transform: rotate(18deg);
   border-radius: 20px;
@@ -869,16 +895,14 @@ article.post {
   transition: var(--transition-time);
 }
 
-.section-call-to-action:hover .overlay-image {
+.section-cta:hover .overlay-image {
   transform: rotate(21deg);
 }
 
-.section-call-to-action h2,
-.section-call-to-action .sub-title,
-.section-call-to-action p {
-  color: white;
+.section-cta h2, .section-cta .sub-title, .section-cta p {
+  color: #fff;
 }
 
-.section-call-to-action .sub-title {
+.section-cta .sub-title {
   color: var(--color-yellow);
 }
